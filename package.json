@@ -1,0 +1,25 @@
+{
+  "name": "quiz2_eco",
+  "version": "1.0.0",
+  "description": "el quiz 2 de Ecosistemas de Apps",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack --watch --progress",
+    "visualize-main": "webpack --analyze"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https:google.com"
+  },
+  "author": "Gabriel A. Mora",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.3.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
+  }
+}

@@ -1,0 +1,96 @@
+#regContainer{
+    display: inline-block;
+    flex-direction: column;
+    text-align: left;
+    width: 40%;
+    justify-content: left;
+    align-items: left;
+    margin: 0 auto;
+    
+} 
+#title {
+    color:black;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ } 
+ .columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column {
+	flex: 1;
+	border: 1px solid gray;
+	margin: 2px;
+	padding: 10px;
+	
+	
+}
+#column:first-child{ margin-left: 0;}
+#column:last-child{ margin-right: 0;}
+
+#postContainer *{
+    width: 100%;
+    margin: 10px;
+} 
+
+#text {
+    height: 100px;
+    border-radius: 5px;
+} 
+
+
+#subtitle{
+   color:black;
+   text-align: left;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+
+#postList{
+    color:whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    text-align: center;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+ } 
+
+
+ .stud-card{
+    background-color:gainsboro;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 980px) {
+    .columns .column {
+          margin-bottom: 5px;
+      flex-basis: 40%;
+         
+      }
+    .columns .column:nth-last-child(2){
+        margin-right: 0;
+    }
+    .columns .column:last-child(){
+        flex-basis: 100%;
+			margin: 0;
+    }
+  }
+  
+  @media screen and (max-width: 680px) {
+      .columns .column {
+          flex-basis: 100%;
+          margin: 0 0 5px 0;
+      }
+  }
