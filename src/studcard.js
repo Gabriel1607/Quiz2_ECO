@@ -1,6 +1,6 @@
 //Clase que representa una tarjeta
 
-import { getDatabase, ref, push } from 'firebase/database';
+import { getDatabase, ref, set, push } from 'firebase/database';
 
 export class studCard {
 
@@ -36,6 +36,20 @@ export class studCard {
         let elimBtn = document.createElement("button");
         elimBtn.className = "elim-button";
         elimBtn.innerHTML = "x";
+        
+        //Añadirle una participación a un estudiante
+        partiBtn.addEventListener("click", (e, ev)=>{
+            const db = getDatabase();
+            const studRef = ref(db,'Students/'+this.stud.id+'/participaciones');
+            set(studRef,this.stud.participaciones+1);
+        });
+
+        //Eliminar un estudiante de la DB
+        elimBtn.addEventListener("click", (e, ev)=>{
+            const db = getDatabase();
+            const studRef = ref(db,'Students/'+this.stud.id);
+            set(studRef, null);
+        });
         
        
         card.appendChild(curso);

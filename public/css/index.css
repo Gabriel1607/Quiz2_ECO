@@ -11,9 +11,10 @@
 #title {
     color:black;
     text-align: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Helvetica';
  } 
  .columns {
+    font-family: 'Helvetica';
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -45,7 +46,7 @@
 #subtitle{
    color:black;
    text-align: left;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-family: 'Helvetica';
 } 
 
 .center {
@@ -57,7 +58,7 @@
 
 #postList{
     color:whitesmoke;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Helvetica';
     font-size: medium;
     text-align: center;
     width: 25%;
@@ -69,9 +70,56 @@
 
  .stud-card{
     background-color:gainsboro;
+    padding-bottom: 10%;
     margin-bottom: 25px;
     border-radius: 5px;
 }
+
+.student-course{
+    padding-top: 5px;
+    padding-left: 15px;
+    font-family: 'Helvetica';
+    color:grey;
+}
+.student-name, .student-code{
+    margin: 0 auto;
+    padding-left: 15px;
+    font-family: 'Helvetica';
+    font-weight: bold;
+    font-size: medium;
+
+}
+.student-particip{
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 40px;
+    font-family: 'Helvetica';
+    font-weight: bolder; 
+    font-size: x-large;
+}
+.part-button{
+background-color: skyblue;
+}
+.elim-button{
+    background-color: firebrick;
+    }
+.part-button, .elim-button{
+    float: right;
+    display: flex;
+    justify-content:center;
+    position: relative;
+    bottom: 50px;
+    right: 20px;
+    font-family: 'Helvetica';
+    font-weight: bolder; 
+    font-size: x-large;
+    border-radius: 50%;
+    width: 50px;
+    height:50px;
+    margin-bottom: 10px; 
+    margin-right: 8px;
+}
+
 
 @media screen and (max-width: 980px) {
     .columns .column {
